@@ -1,0 +1,26 @@
+.about-us-container {
+    max-width: 800px;
+    margin: 20px auto; 
+    padding: 20px;
+    text-align: center;
+    background-color: #5ca418;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.about-us-container h1 {
+    color: rgb(0, 0, 0); /* Color del texto principal */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us-container p {
+    color: rgb(0, 0, 0); /* Color del texto del párrafo */
+    font-size: 18px;
+    line-height: 1.6; /* Espacio entre líneas */
+    margin-bottom: 15px;
+}
+.images{
+    padding: -20px;
+    
+}

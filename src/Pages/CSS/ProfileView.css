@@ -1,0 +1,118 @@
+/* Estilos generales */
+body {
+    background-color: #f9fafb;
+  }
+  
+  .profile-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333333;
+  }
+  
+  .profile-icon {
+    font-size: 4rem;
+    color: #4a5568;
+  }
+  
+  .profile-section {
+    background-color: #f3f4f6;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .section-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+  }
+  
+  /* Información Personal */
+  .personal-info p {
+    color: #4a5568;
+    margin: 0.5rem 0;
+  }
+  
+  /* Historial de préstamos */
+  .loan-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .loan-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .loan-title {
+    font-weight: 500;
+    color: #1a202c;
+  }
+  
+  .loan-author,
+  .loan-date {
+    color: #718096;
+    font-size: 0.875rem;
+  }
+  
+  /* Configuración de la cuenta */
+  .account-settings .action-button {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .edit-profile {
+    color: #4c51bf;
+    border-color: #4c51bf;
+    margin-right: 1rem;
+  }
+  
+  .edit-profile:hover {
+    background-color: #4c51bf;
+    color: #ffffff;
+  }
+  
+  .logout {
+    color: #e53e3e;
+    border-color: #e53e3e;
+  }
+  
+  .logout:hover {
+    background-color: #e53e3e;
+    color: #ffffff;
+  }
+  
+  .button-icon {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
+  

@@ -1,0 +1,86 @@
+.footer {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 20px 0; /* Aumenta el padding para mayor separación */
+    margin-top: 40px; /* Aumenta el margen superior para más separación del contenido anterior */
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Mantiene el espacio entre los elementos del logo */
+}
+
+.footer-logo p {
+    color: #383838;
+    font-size: 24px; /* Tamaño de la fuente */
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 15px; /* Espacio entre los enlaces */
+    color: #252525;
+    font-size: 14px; /* Tamaño de la fuente */
+    text-align: center;
+    padding: 0;
+    margin: 5px 0; /* Ajusta el margen */
+}
+
+.link-custom {
+    color: inherit; /* Mantiene el color de texto original del elemento padre */
+    text-decoration: none; /* Elimina el subrayado */
+}
+
+.footer-links li {
+    cursor: pointer;
+    padding: 0;
+    text-align: center;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 15px; /* Espacio entre los iconos */
+    margin-top: 5px; /* Ajusta el margen superior */
+}
+
+.footer-icons-container {
+    padding: 5px; /* Reduce el padding */
+    background: white;
+    border: 1px solid #f4f1ea;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease; /* Agrega la transición para la animación */
+}
+
+.footer-icons-container:hover {
+    transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px; /* Espacio entre los elementos */
+    width: 100%;
+    margin-top: 5px; 
+    color: #504e4e;
+    font-size: 14px; 
+}
+
+.footer-copyright hr {
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+    height: 1px; 
+    background: black;
+    margin: 5px 0; 
+}

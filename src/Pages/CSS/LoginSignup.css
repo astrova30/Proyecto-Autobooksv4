@@ -1,0 +1,105 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #f4f4f4; /* Color de fondo suave */
+}
+
+.login-container {
+    background-color: white;
+    border-radius: 12px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para profundidad */
+    padding: 40px;
+    width: 400px; /* Ancho fijo */
+    transition: transform 0.3s ease;
+}
+
+.login-container:hover {
+    transform: scale(1.02); /* Efecto de zoom al pasar el ratón */
+}
+
+h2 {
+    text-align: center;
+    color: #333; /* Color del texto */
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+.input {
+    padding: 14px;
+    border-radius: 12px; /* Bordes redondeados */
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Efectos de transición */
+    outline: none;
+}
+
+.input:focus {
+    border-color: #4CAF50; /* Color del borde al enfocar */
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); /* Sombra al enfocar */
+}
+
+.button {
+    padding: 14px 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #45a049; /* Color del botón al pasar el ratón */
+    transform: scale(1.02); /* Efecto de escala al pasar el ratón */
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link a {
+    color: #4CAF50; /* Color de los enlaces */
+    text-decoration: none;
+    transition: text-decoration 0.3s ease;
+}
+
+.link a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px; /* Espacio inferior para el mensaje de error */
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container .input {
+    padding-right: 40px; /* Espacio adicional para el ícono */
+}
+
+.toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.toggle-password:hover {
+    color: #4CAF50; /* Cambia el color al pasar el ratón */
+}

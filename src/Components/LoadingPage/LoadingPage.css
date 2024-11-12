@@ -1,0 +1,30 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f1ea;
+    color: #70b22d;
+    font-family: oblique bold 100% cursive;
+}
+
+.spinner {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #70b22d;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+p {
+    font-size: 18px;
+    font-weight: 600;
+}

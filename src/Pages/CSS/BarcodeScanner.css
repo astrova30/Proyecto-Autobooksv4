@@ -1,0 +1,149 @@
+.barcode-scanner-container {
+  max-width: 800px; 
+  padding: 20px; 
+  background-color: #f0f4f8; 
+  border: 1px solid #d1e5f0; 
+  border-radius: 8px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  font-family: oblique bold 100% cursive; 
+  margin: 20px auto; /* Centrando horizontalmente */
+}
+
+.barcode-scanner-container h1 {
+  font-size: 28px; 
+  color: #333; 
+  text-align: center; 
+  margin-bottom: 20px; 
+  font-style: oblique bold 100% cursive; 
+  font-weight: bold; 
+  font-family: oblique bold 100% cursive;
+}
+
+.barcode-scanner-container form {
+  margin-bottom: 20px; 
+}
+
+.barcode-scanner-container label {
+  display: block; 
+  margin-bottom: 8px; 
+  font-weight: bold; 
+  color: #555; 
+  font-style: oblique; 
+}
+
+.barcode-scanner-container input[type="text"] {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  font-size: 16px; 
+  transition: border-color 0.3s ease; 
+}
+
+.barcode-scanner-container input[type="text"]:focus {
+  border-color: #007bff; 
+  outline: none; 
+}
+
+.barcode-scanner-container button {
+  padding: 12px 20px; 
+  font-size: 16px; 
+  color: #fff; 
+  background-color: #28a745; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  margin-top: 10px; 
+  transition: background-color 0.3s ease; 
+  font-family: oblique bold 100% cursive; 
+  margin-left: 27px; 
+  font-style: oblique bold 100% cursive;
+  font:oblique bold 100% cursive;
+}
+
+.barcode-scanner-container button:hover {
+  background-color: #218838; 
+  font-family: oblique bold 100% cursive; 
+}
+
+.barcode-scanner-container .message {
+  color: #1ed11b; 
+  margin-top: 10px; 
+  text-align: center; 
+  font-weight: bold; 
+  font-family: oblique bold 100% cursive; 
+}
+
+.book-info {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+  margin-top: 20px; 
+}
+
+.book-info h2 {
+  font-size: 24px; 
+  margin-bottom: 10px; 
+  color: #007bff; 
+  font-style: oblique bold 100% cursive; 
+  font-weight: bold; 
+}
+
+.book-info p {
+  font-size: 16px; 
+  margin: 5px 0; 
+  font-style: oblique; 
+}
+
+.loan-history {
+  margin-top: 20px; 
+  padding: 15px; 
+  background-color: #ffffff; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.loan-history h3 {
+  font-size: 20px; 
+  margin-bottom: 10px; 
+  color: #007bff; 
+  font-style: oblique; 
+  font-weight: bold; 
+}
+
+.loan-history ul {
+  list-style-type: none; 
+  padding: 0; 
+}
+
+.loan-history li {
+  margin-bottom: 10px; 
+  font-size: 16px; 
+  color: #555; 
+  background-color: #f9f9f9; 
+  padding: 10px; 
+  border-radius: 4px; 
+  transition: background-color 0.3s ease; 
+}
+
+.loan-history li:hover {
+  background-color: #e9ecef; 
+}
+
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1); 
+  border-left-color: #007bff; 
+  border-radius: 50%; 
+  width: 30px; 
+  height: 30px; 
+  animation: spin 1s linear infinite; 
+  margin: 20px auto; 
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg); 
+  }
+}

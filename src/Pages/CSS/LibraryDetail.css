@@ -1,0 +1,129 @@
+.library-detail-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4; /* Fondo ligeramente gris */
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada */
+  max-width: 1200px;
+  margin: 40px auto; 
+  font-family: oblique bold 100% cursive; 
+}
+
+.book-cover {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px; 
+}
+
+.book-cover img {
+  max-width: 100%;
+  max-height: 450px;
+  border: 3px solid #70b22d; 
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); 
+  object-fit: cover;
+}
+
+.book-info {
+  flex: 2;
+  background-color: #ffffff; 
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #eee;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.book-info:hover {
+  transform: translateY(-8px); /* Mayor elevación al pasar el ratón */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada en hover */
+}
+
+.book-info h1 {
+  color: #2d2d2d; /* Tono más oscuro de gris */
+  font-size: 2.8rem; /* Texto más grande */
+  margin-bottom: 15px;
+  font-weight: 700; /* Más peso */
+}
+
+.book-info h2 {
+  color: #555; 
+  font-size: 1.9rem; /* Ajuste del tamaño */
+  margin-bottom: 25px;
+  font-weight: 500; 
+}
+
+.book-info p {
+  color: #777; /* Texto gris más claro */
+  font-size: 1.3rem;
+  line-height: 1.8; /* Mejor legibilidad */
+  margin-bottom: 15px;
+}
+
+.book-info p strong {
+  color: #333; 
+}
+
+.borrow-book-button {
+  background-color: #70b22d; /* Verde vibrante */
+  color: white;
+  padding: 15px 30px; /* Botón más grande */
+  font-size: 1.4rem; /* Texto más grande */
+  border: none;
+  border-radius: 8px; /* Bordes más redondeados */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 25px;
+}
+
+.borrow-book-button:hover,
+.borrow-book-button:focus {
+  background-color: #4e7a1c; /* Verde más oscuro */
+  transform: translateY(-3px); /* Efecto de elevación más sutil */
+  box-shadow: 0 8px 20px rgba(112, 178, 45, 0.2); /* Sombra suave en hover */
+}
+
+.request-status {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #70b22d; /* Verde para mensajes de estado */
+}
+
+.not-found {
+  color: #d9534f; /* Rojo más vibrante */
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 30px; /* Mayor espacio superior */
+}
+
+
+@media (max-width: 768px) {
+  .library-detail-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .book-cover {
+    margin-bottom: 20px;
+  }
+
+  .book-info h1 {
+    font-size: 2rem;
+  }
+
+  .book-info h2 {
+    font-size: 1.5rem;
+  }
+
+  .book-info p {
+    font-size: 1.1rem;
+  }
+
+  .borrow-book-button {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+  }
+}

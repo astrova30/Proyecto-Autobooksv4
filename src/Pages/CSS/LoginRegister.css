@@ -1,0 +1,174 @@
+/* Página de registro */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #e0f2f1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Contenedor del formulario de registro */
+.register-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 700px; 
+    width: 100%;
+    transition: transform 0.3s ease;
+    box-sizing: border-box;
+}
+
+.register-container:hover {
+    transform: scale(1.02);
+}
+
+.register-container h2 {
+    text-align: center;
+    color: #2e7d32;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Filas de entrada de datos */
+.input-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+/* Campo de entrada */
+.input {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #b2dfdb;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Distribución en dos columnas para algunos campos */
+.input-half {
+    flex: 1;
+}
+
+/* Campo de ancho completo */
+.full-width {
+    flex: 1 1 100%;
+}
+
+/* Botón de envío */
+.button {
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
+}
+
+.button:hover {
+    background-color: #388e3c;
+    transform: scale(1.02);
+}
+
+.link {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.link a {
+    color: #388e3c;
+    text-decoration: none;
+}
+
+.link a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    color: #d32f2f;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Contenedor para el campo de contraseña con el ojito */
+.password-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px; /* Espacio adicional entre los campos */
+}
+
+/* Posicionamiento del ícono de ojito */
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+    padding-left: 5px;
+}
+
+/* Barra de fortaleza de contraseña */
+.password-strength {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Espacio entre el campo de contraseña y la barra */
+    margin-bottom: 20px; /* Espacio adicional debajo de la barra de fortaleza */
+}
+
+.strength-bar {
+    height: 5px;
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: width 0.3s ease;
+}
+
+.strength-bar.weak {
+    background-color: red;
+    width: 33%;
+}
+
+.strength-bar.medium {
+    background-color: orange;
+    width: 66%;
+}
+
+.strength-bar.strong {
+    background-color: green;
+    width: 100%;
+}
+
+.strength-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.strength-text.weak {
+    color: red;
+}
+
+.strength-text.medium {
+    color: orange;
+}
+
+.strength-text.strong {
+    color: green;
+}
+
+@media (min-width: 768px) {
+    .input-half {
+        width: calc(50% - 7.5px); 
+    }
+}
